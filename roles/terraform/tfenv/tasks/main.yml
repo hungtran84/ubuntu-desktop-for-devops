@@ -4,15 +4,15 @@
   become: true
   git:
     repo: 'https://github.com/tfutils/tfenv'
-    dest: /usr/local/lib/tfenv
+    dest: $HOME/.local/lib/tfenv
     version: master
   register: result
 
 - name: Install tfenv binary
   become: true
   file:
-    src: /usr/local/lib/tfenv/bin/{{ item }}
-    dest: /usr/local/bin/{{ item }}
+    src: $HOME/.local/lib/tfenv/bin/{{ item }}
+    dest: $HOME/.local/bin/{{ item }}
     state: link
   loop:
     - terraform
@@ -27,7 +27,7 @@
       tfenv install '{{ tf_version }}'
       tfenv use '{{ tf_version }}'
     chdir: ~
-    creates: "/usr/local/lib/tfenv/versions/'{{ tf_version }}'/terraform"
+    creates: "$HOME/.local/lib/tfenv/versions/'{{ tf_version }}'/terraform"
   when: not ansible_check_mode
 
 # Autocomplete for bash and zsh
