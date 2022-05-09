@@ -183,6 +183,12 @@
       tags:
         - timeshift
       when: timeshift_enabled | bool
+    - role: vscode
+      become: true
+      tags:
+        - vscode
+      when: vscode_enabled | bool
+
     - role: winbox
       become: true
       tags:

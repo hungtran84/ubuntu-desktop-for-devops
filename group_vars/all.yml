@@ -6,18 +6,18 @@ desktop_enabled: yes
 
 angryipscanner_enabled:       no
 atom_enabled:                 no
-aws_enabled:                  no
-awscli_enabled:               no
+aws_enabled:                  yes
+awscli_enabled:               yes
 awsebcli_enabled:             no
 awsecscli_enabled:            no
 barrier_enabled:              no
 bitwarden_enabled:            no
-chromium_enabled:             no
+chromium_enabled:             yes
 common_git_enabled:           no
 dbeaver_enabled:              no
 discord_enabled:              no
 doctl_enabled:                no
-docker_enabled:               no
+docker_enabled:               yes
 dots_enabled:                 no
 envchain_enabled:             no
 filezilla_enabled:            no
@@ -34,9 +34,9 @@ indicator_sysmonitor_enabled: no
 java_openjdk_enabled:         no
 kazan_enabled:                no
 kubectl_enabled:              no
-lens_enabled:                 no
+lens_enabled:                 yes
 ledger_live_enabled:          no
-libreoffice_enabled:          no
+libreoffice_enabled:          yes
 losslesscut_enabled:          no
 minikube_enabled:             no
 meld_enabled:                 no
@@ -46,8 +46,8 @@ nextcloud_enabled:            no
 noisetorch_enabled:           no
 pop_os_enabled:               no
 pop_os_shell_enabled:         no
-python_enabled:               no
-remmina_enabled:              no
+python_enabled:               yes
+remmina_enabled:              yes
 ruby_enabled:                 no
 ruby_rbenv_enabled:           no
 ruby_landscape_enabled:       no
@@ -55,7 +55,7 @@ scribus_enabled:              no
 shutter_enabled:              no
 signal_enabled:               no
 skype_enabled:                no
-slack_enabled:                no
+slack_enabled:                yes
 solaar_enabled:               no
 snapd_enabled:                no
 ssh_enabled:                  no
@@ -63,8 +63,8 @@ sublime3_enabled:             no
 sunflower_enabled:            no
 syncthing_enabled:            no
 teamviewer_enabled:           no
-tfenv_enabled:                no
-tgenv_enabled:                no
+tfenv_enabled:                yes
+tgenv_enabled:                yes
 thunderbird_enabled:          no
 timeshift_enabled:            no
 tlp_enabled:                  no
@@ -73,6 +73,7 @@ ufw_enabled:                  no
 vagrant_enabled:              no
 virtualbox_enabled:           no
 virtmanager_enabled:          no
+vscode_enabled:               yes             
 vscodium_enabled:             no
 winbox_enabled:               no
 zsh_enabled:                  no
