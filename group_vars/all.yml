@@ -32,6 +32,7 @@ guake_enabled:                no
 handbrake_enabled:            no
 indicator_sysmonitor_enabled: no
 java_openjdk_enabled:         no
+java_openjre_enabled:         no
 kazan_enabled:                no
 kubectl_enabled:              no
 lens_enabled:                 yes
