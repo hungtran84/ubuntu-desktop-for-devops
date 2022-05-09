@@ -20,7 +20,7 @@
   shell: |
       . $HOME/.profile
       tfenv install {{ item }}
-  loop: tf_versions
+  loop: '{{ tf_versions }}'
   when: not ansible_check_mode
 
 # Autocomplete for bash and zsh
