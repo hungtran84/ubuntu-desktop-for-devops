@@ -26,7 +26,7 @@ gimp_enabled:                 no
 gitg_enabled:                 no
 gnome_encfs_manager_enabled:  no
 gparted_enabled:              no
-go_enabled:                   no
+golang_enabled:               no
 go_assh_enabled:              no
 guake_enabled:                no
 handbrake_enabled:            no
