@@ -12,6 +12,7 @@
     src: $HOME/.tfenv/bin/*
     dest: $HOME/.local/bin
     state: link
+    force: yes
   when: result is success and not ansible_check_mode
   register: result
 
