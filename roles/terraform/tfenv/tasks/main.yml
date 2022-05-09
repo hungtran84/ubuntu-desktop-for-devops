@@ -9,7 +9,7 @@
 
 - name: Install tfenv binary
   file:
-    src: $HOME/.local/lib/tfenv/bin/
+    src: $HOME/.tfenv/bin/
     dest: $HOME/.local/bin/
     state: link
   when: result is success and not ansible_check_mode
