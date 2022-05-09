@@ -7,12 +7,19 @@
     version: master
   register: result
 
+- name: Create local binary path
+  file:
+    path: $HOME/.local/bin
+    state: directory
+    
 - name: Install tfenv binary
   file:
-    src: $HOME/.tfenv/bin/*
-    dest: $HOME/.local/bin
+    src: $HOME/.tfenv/bin/{{ item }}
+    dest: $HOME/.local/bin/{{ item }}
     state: link
-    force: yes
+  loop:
+    - tfenv
+    - terraform
   when: result is success and not ansible_check_mode
   register: result
 
