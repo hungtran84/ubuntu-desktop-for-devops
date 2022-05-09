@@ -1,4 +1,5 @@
 ---
 
 tfenv_enabled: 'no'
-tf_version: latest
+tf_versions:
+  - latest

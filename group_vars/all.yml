@@ -92,3 +92,8 @@ ssh:
   service_enabled: true
   password_auth: false
   root_login: false
+
+# tf_versions:
+#   - latest
+#   - 1.1.9
+#   - 0.15.5
